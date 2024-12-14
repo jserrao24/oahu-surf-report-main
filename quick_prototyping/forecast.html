@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Surf Report (Oahu)</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="libs/highcharts.js"></script>
+</head>
+
+<body>
+    <div class="container mx-auto max-w-screen-md p-4">
+        <div class="text-4xl font-extrabold">Oahu Surf Forecast</div>
+        <div id="published-date" class="text-xs font-medium text-gray-400"></div>
+        <div id="description" class="pb-4"></div>
+
+        <div id="day-metadata" class="pb-4"></div>
+
+        <div class="font-extrabold">NORTH</div>
+        <div id="north-table" class="space-x-1 flex w-full"></div>
+        <div class="h-4"></div>
+
+        <div class="font-extrabold">WEST</div>
+        <div id="west-table" class="space-x-1 flex w-full"></div>
+        <div class="h-4"></div>
+
+        <div class="font-extrabold">SOUTH</div>
+        <div id="south-table" class="space-x-1 flex w-full"></div>
+        <div class="h-4"></div>
+
+        <div class="font-extrabold">EAST</div>
+        <div id="east-table" class="space-x-1 flex w-full"></div>
+    </div>
+</body>
+<script src="src/forecast_script.js"></script>
+
+</html>

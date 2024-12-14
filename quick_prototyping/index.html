@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Surf Report (Oahu)</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="libs/highcharts.js"></script>
+</head>
+
+<body>
+    <div class="container mx-auto px-4 py-4">
+
+        <!-- <input type="file" id="file-input" /> -->
+        <div id="latest-data-barbers">
+            <div class="flex-none w-full pl-18 sm:pl-20 sm:py-0.5">
+                <dt class="text-sm font-medium">Barbers Point</dt>
+                <dd class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+                    <span id="latest-wave-height-barbers">N/A</span>FT <span id="trend-barbers"></span>
+                </dd>
+                <dt id="latest-timestamp-barbers" class="text-xs font-medium text-gray-400">Wed, Dec 9 9:45pm</dt>
+            </div>
+        </div>
+        <div id="chart-barbers"></div>
+
+        <div id="latest-data-waimea">
+            <div class="flex-none w-full pl-18 sm:pl-20 sm:py-0.5">
+                <dt class="text-sm font-medium">Waimea Bay</dt>
+                <dd class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+                    <span id="latest-wave-height-waimea">N/A</span>FT <span id="trend-waimea"></span>
+                </dd>
+                <dt id="latest-timestamp-waimea" class="text-xs font-medium text-gray-400">Wed, Dec 9 9:45pm</dt>
+            </div>
+        </div>
+        <div id="chart-waimea"></div>
+
+        <div id="raw-data"></div>
+    </div>
+</body>
+<script src="src/script.js"></script>
+
+</html>

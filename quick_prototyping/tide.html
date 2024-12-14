@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tide testing</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="libs/highcharts.js"></script>
+</head>
+
+<body>
+    <div class="container mx-auto px-4">
+        <div id="trend">
+            <div class="text-medium">
+                <span id="current-tide" class="font-semibold"></span> <span id="trend-text"></span> Tide<span id="trend-icon"></span>
+            </div>
+            <div>
+                <span id="next-tide" class="text-xs font-medium text-gray-400"></span>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="flex-1 overflow-hidden">
+                <div id="chart-1">
+                </div>
+                <div>
+                    <table id="table-1" class="w-full border-collapse border border-gray-100 text-sm"></table>
+                </div>
+            </div>
+            <div class="flex-1 overflow-hidden">
+                <div id="chart-2">
+                </div>
+                <div>
+                    <table id="table-2" class="w-full border-collapse border border-gray-100 text-sm"></table>
+                </div>
+            </div>
+            <div class="hidden md:block flex-1 overflow-hidden">
+                <div id="chart-3">
+                </div>
+                <div>
+                    <table id="table-3" class="w-full border-collapse border border-gray-100 text-sm"></table>
+                </div>
+            </div>
+            <div class="hidden md:block flex-1 overflow-hidden">
+                <div id="chart-4">
+                </div>
+                <div>
+                    <table id="table-4" class="w-full border-collapse border border-gray-100 text-sm"></table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="src/tide_script.js"></script>
+
+</html>
